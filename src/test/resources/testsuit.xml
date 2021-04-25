@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" verbose="1" >
+    <groups>
+        <run>
+            <exclude name="brokenTests"  />
+            <include name="checkinTests"  />
+        </run>
+    </groups>
+    <parameter name="productName" value="Фестал Нео"/>
+
+    <test name="Functional">
+        <classes>
+            <class name="SearchTest"/>
+            <class name="BuyProductTest"/>
+        </classes>
+    </test>
+
+    <test name="UI">
+        <classes>
+            <class name="HomePageTestUI"/>
+        </classes>
+    </test>
+
+</suite>
