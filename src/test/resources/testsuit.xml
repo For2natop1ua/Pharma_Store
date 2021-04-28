@@ -5,6 +5,7 @@
         <run>
             <exclude name="brokenTests"  />
             <include name="checkinTests"  />
+            <include name="orderTests"  />
         </run>
     </groups>
     <parameter name="productName" value="Фестал Нео"/>
